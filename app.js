@@ -1,4 +1,5 @@
 'use strict';
+import ImageButton from "./ImageButton";
 
 
 
@@ -96,10 +97,13 @@ const domContainer = document.querySelector('#root');
 
 const root = ReactDOM.createRoot(domContainer);
 
-root.render(e('div',{className: 'final'},e(DoubleDiv), e(DoubleDiv2)));
-// root.render(e('div', {className: 'Ilya'},
-//  [e(SuperLikeButton),//Можно ли задать пропсы для функционального компонента в функции E?
-//  e(RandomNamesButton),
-//  e(RandomNamesButton),
-//  e(DoubleDiv)]));
+// root.render(e('div',{className: 'final'},e(DoubleDiv), e(DoubleDiv2)));
+root.render(e('div', {className: 'Ilya'},
+ [e(SuperLikeButton),//Можно ли задать пропсы для функционального компонента в функции E?
+ e(RandomNamesButton),
+ e(RandomNamesButton),
+ e(DoubleDiv),
+ e(ImageButton)]));
 // root.render(e('div', {className: 'dima'}, 'TEXT'))
+
+//Роутинг, JSX, Хуки,  CJS и ES6модули;
